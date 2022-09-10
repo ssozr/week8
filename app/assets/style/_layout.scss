@@ -1,0 +1,30 @@
+.header{
+    .input-group{
+        position:relative;
+      }
+      .form-control{
+        width: 30px;
+        height: 30px;
+        box-sizing:border-box;
+        background: rgba(0,0,0,0);
+      }
+      .form-control:focus{
+        width: 50%;
+        transition:1s ease;
+      }
+      .input-group-append{
+        width: 30px;
+        height: 30px;
+        background: #000;
+        position: absolute;
+        top:0;
+        left:0px;
+        z-index: -1;
+      }
+      .input-group-text{
+        color:#fff;
+        position: absolute;
+        top:10%;
+        left:25%;
+      }
+}
