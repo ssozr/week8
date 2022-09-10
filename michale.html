@@ -1,10 +1,94 @@
----
-title: michael
-layout: ./app/layout.ejs
-engine: ejs
-current: michael
----
+<!DOCTYPE html>
+<html lang="en">
 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>michael</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Paytone+One&family=Squada+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <div class="header bg-light position-relative">
+      <div class="bottom-line"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+              <div class="container-fluid px-0  ">
+                <a class="navbar-brand  py-4 img-hover" href="#"><img src="/assets/images/logo.svg" class="logo " alt=""></a>
+                <div class="d-flex">
+                  <div class="seach d-flex d-xl-none">
+                    <input type="text" class="seach_input " placeholder="搜尋作品名稱、藝術家名稱 ">
+                    <button class="seach_btn border-0"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                  </div>
+                  <button class="navbar-toggler ms-6 border-0 img-hover" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars icon-black "></i>
+                  </button>
+                </div>
+                
+                <div class="collapse navbar-collapse " >
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center d-flex align-items-center">
+                    <li class="nav-item d-none d-xl-block">
+                      <div class=" d-flex py-6 py-lg-10 px-lg-12 border-start">
+                        <input type="text" class=" fs-8 bg-light border-0 pe-6 " placeholder="搜尋作品名稱、藝術家名稱 ">
+                        <button class=" border-0"><i class="fa-sharp fa-solid  fa-magnifying-glass fs-12-24"></i></button>
+                      </div>
+                    </li>
+                    <li class="nav-item width-100">
+                      <a class="nav-link py-6 py-lg-10 px-lg-12 border-start text-black fs-8 img-hover fs-8-24 fw-bold" aria-current="page" href="#">探索</a>
+                    </li>
+                    <li class="nav-item width-100 ">
+                      <a class="nav-link text-black py-6 py-lg-10 px-lg-12 border-start border-end fs-8 text-nowrap text-black img-hover fs-8-24 fw-bold" href="#">市值</a>
+                    </li>
+                    <li class="nav-item d-lg-none width-100">
+                      <a class="nav-link btn btn-primary border py-3">連結錢包</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex">
+                    <button class="btn d-none d-lg-block py-6 py-lg-10 px-lg-12 img-hover" type="submit"><i class="fa-solid fa-wallet fs-27"></i></button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+          </div>
+          
+        </div>
+      </div>
+      <div class="collapse navbar-collapse d-xl-none bg-white " id="navbarSupportedContent">
+        
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center d-flex align-items-center px-3 py-6">
+          <li class="nav-item d-none d-xl-block pe-6">
+            <div class=" d-flex py-6 py-lg-10 px-lg-12 border-start">
+              <input type="text" class=" fs-8 bg-light border-0 pe-6 " placeholder="搜尋作品名稱、藝術家名稱 ">
+              <button class=" border-0"><i class="fa-sharp fa-solid fa-magnifying-glass "></i></button>
+            </div>
+          </li>
+          <li class="nav-item width-100">
+            <a class="nav-link py-6 py-lg-10 px-lg-12  text-black border-bottom fs-9 img-hover" aria-current="page" href="#">探索</a>
+          </li>
+          <li class="nav-item width-100 ">
+            <a class="nav-link text-black py-6 py-lg-10 px-lg-12   text-nowrap text-black fs-9 img-hover" href="#">市值</a>
+          </li>
+          <li class="nav-item d-lg-none width-100">
+            <a class="nav-link btn btn-primary border py-3 text-white img-hover fs-9">連結錢包</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <button class="btn d-none d-xl-block py-6 py-lg-10 px-lg-12 " type="submit"><i class="fa-solid fa-wallet"></i></button>
+        </form>
+        
+      </div>
+    </div>
+
+    
 
 <div class="container mt-10 mb-10 mb-md-20">
     <div class="row">
@@ -294,3 +378,61 @@ current: michael
 </div>
 
 
+
+
+    <footer class="footer">
+      <div class="container-fluid bg-light">
+        <div class="row ">
+          <div class="text-center py-6 border-top border-4">
+            <h3 class="fs-8-24">© ART NFT. All Rights Reserved</h3>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 48,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 4,
+        spaceBetween: 40
+      }
+    }
+        
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+    
+  </body>
+
+</html>
