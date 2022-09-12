@@ -13672,6 +13672,13 @@ a {
   height: 374px;
 }
 
+@media (max-width: 1200px) {
+  .height-374 {
+    height: 91px;
+    width: 87px;
+  }
+}
+
 .border-10 {
   border: 10px solid black;
 }
@@ -13786,6 +13793,13 @@ ul {
   line-height: 50px;
 }
 
+@media (max-width: 1200px) {
+  .fs-24 {
+    font-size: 32px;
+    line-height: 34px;
+  }
+}
+
 .fs-27 {
   font-size: 27px;
   line-height: 24px;
@@ -13797,13 +13811,6 @@ ul {
 
 .fs-40 {
   line-height: 85px;
-}
-
-@media (max-width: 1200px) {
-  .fs-24 {
-    font-size: 32px;
-    line-height: 34px;
-  }
 }
 
 .img {
@@ -13818,13 +13825,26 @@ ul {
   height: 340px;
 }
 
+@media (max-width: 1200px) {
+  .img-s {
+    height: 100%;
+  }
+}
+
 .img-2 {
   height: 100%;
+  width: 756px;
 }
 
 .img-374 {
   height: 374px;
   width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .img-374 {
+    height: 91px;
+  }
 }
 
 .img-91 {
@@ -13839,19 +13859,6 @@ ul {
      object-position: center;
   display: block;
   z-index: 1;
-}
-
-@media (max-width: 1200px) {
-  .img-s {
-    height: 100%;
-  }
-  .img-374 {
-    height: 91px;
-  }
-  .height-374 {
-    height: 91px;
-    width: 87px;
-  }
 }
 
 .triangle {
@@ -13924,6 +13931,26 @@ ul {
   .border-bottom-992 {
     border-bottom: 2px solid black !important;
   }
+}
+
+.more-hover:hover {
+  background-color: #E6553B;
+  color: white;
+}
+
+.more-hover:hover a {
+  color: white;
+}
+
+.more-hover:hover .triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 16px 16px;
+  border-color: transparent transparent black transparent;
+  position: absolute;
+  bottom: 1px;
+  right: 0px;
 }
 
 .header .bottom-line::before {
